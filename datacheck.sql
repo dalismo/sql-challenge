@@ -48,3 +48,10 @@ inner join "Dept_Emp" on "Employees".emp_no = "Dept_Emp".emp_no
 inner join "Departments" on "Departments".dept_no = "Dept_Emp".dept_no
 where "Departments".dept_name like 'Sales';
 
+--7. List all employees in the Sales and Development departments, including their employee number, last name, first name, and department name.
+select "Employees".emp_no, "Employees".last_name, "Employees".first_name, "Departments".dept_name
+from "Employees"
+inner join "Dept_Emp" on "Employees".emp_no = "Dept_Emp".emp_no
+inner join "Departments" on "Departments".dept_no = "Dept_Emp".dept_no
+where "Departments".dept_name like 'Sales' or "Departments".dept_name like 'Development';
+
