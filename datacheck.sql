@@ -32,5 +32,7 @@ inner join "Employees" on "Employees".emp_no = "Dept_Manager".emp_no
 --4. List the department of each employee with the following information: employee number, last name, first name, and department name.
 select "Employees".emp_no, "Employees".last_name, "Employees".first_name, "Departments".dept_name
 from "Employees"
+join "Dept_Emp" on "Employees".emp_no = "Dept_Emp".emp_no
+
 
 
