@@ -36,5 +36,8 @@ join "Dept_Emp" on "Employees".emp_no = "Dept_Emp".emp_no
 join "Departments" on "Dept_Emp".dept_no = "Departments".dept_no
 ;
 
+--5. List first name, last name, and sex for employees whose first name is "Hercules" and last names begin with "B."
+
+
 
 
