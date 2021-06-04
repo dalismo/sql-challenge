@@ -41,4 +41,10 @@ select first_name, last_name, sex
 from "Employees"
 where first_name = 'Hercules' and last_name like 'B%';
 
+--6. List all employees in the Sales department, including their employee number, last name, first name, and department name.
+select "Employees".emp_no, "Employees".last_name, "Employees".first_name, "Departments".dept_name
+from "Employees"
+left join "Salaries" on "Employees".emp_no = "Salaries".emp_no
+;
+
 
