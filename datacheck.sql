@@ -21,3 +21,10 @@ select first_name, last_name, hire_date
 from "Employees"
 where hire_date between '1986-01-01' and '1987-01-01';
 
+--3. List the manager of each department with the following information: department number, department name, the manager's employee number, last name, first name.
+select "Departments".dept_no, "Departments".dept_name, "Employees".emp_no, "Employees".last_name, "Employees".first_name
+from "Departments"
+inner join "Dept_Manager" on "Dept_Manager".dept_no = "Departments".dept_no
+inner join "Employees" on "Employees".emp_no = "Dept_Manager".emp_no
+;
+
