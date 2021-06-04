@@ -33,6 +33,8 @@ inner join "Employees" on "Employees".emp_no = "Dept_Manager".emp_no
 select "Employees".emp_no, "Employees".last_name, "Employees".first_name, "Departments".dept_name
 from "Employees"
 join "Dept_Emp" on "Employees".emp_no = "Dept_Emp".emp_no
+join "Departments" on "Dept_Emp".dept_no = "Departments".dept_no
+;
 
 
 
