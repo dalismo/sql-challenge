@@ -72,8 +72,6 @@ Evidence in hand, you march into your boss's office and present the visualizatio
 
 * Create a `.sql` file of your queries.
 
-* (Optional) Create a Jupyter Notebook of the bonus analysis.
-
 * Create and upload a repository with the above files to GitHub and post a link on BootCamp Spot.
 
 * Ensure your repository has regular commits (i.e. 20+ commits) and a thorough README.md file
